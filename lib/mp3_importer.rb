@@ -7,7 +7,8 @@ class MP3Importer
   end
 
   def files
-    Dir.glob("@path/**/*.mp3")
+    Dir.entires(@path).each do |file|
+      unless file == "." || file == ".."
   end
 
   def import(files)
