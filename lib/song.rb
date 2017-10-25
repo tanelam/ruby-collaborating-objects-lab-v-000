@@ -6,8 +6,8 @@ attr_accessor :artist, :name
   end
 
 
-  def self.new_by_filename(filename_data)
-    row = filename_data
+  def self.new_by_filename
+    
     data = row.split(" - ")
 
     song = self.new()
