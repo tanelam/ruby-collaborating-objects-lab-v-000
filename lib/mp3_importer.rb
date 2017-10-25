@@ -9,10 +9,10 @@ class MP3Importer
   def files
     Dir.entires(@path).each do |file|
       unless file == "." || file == ".."
-        files << file 
+        @file << file
       end
     end
-    file
+    @file
   end
 
   def import(files)
