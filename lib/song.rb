@@ -20,7 +20,5 @@ attr_accessor :artist, :name
     self.artist = artist
     artist.add_song(self)
   end
-
-
-
+  
 end
