@@ -8,8 +8,10 @@ class MP3Importer
   def files
   end
 
-  def import
-    
+  def import(files)
+    files.each do |file| 
+      file.split(" - ")
+    end
   end
 
 end
