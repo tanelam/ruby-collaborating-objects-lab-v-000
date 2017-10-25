@@ -7,7 +7,7 @@ class MP3Importer
   end
 
   def files
-    Dir.glob("mp3s/**/*.mp3")
+    Dir.glob("@path/**/*.mp3")
   end
 
   def import(files)
